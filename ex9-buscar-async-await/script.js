@@ -27,7 +27,6 @@ if (!response.ok){
     const user = await response.json();
 
     // Exibe os dados do usuário na página
-
     userDataElement.innerHTML = `
         <h2>Dados do Usuário:</h2>
           <p><strong>Nome:</strong> ${user.name}</p>
