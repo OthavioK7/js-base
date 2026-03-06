@@ -57,8 +57,19 @@
     ];
 
        // 1ª Digitação (Resolva aqui o exercício)
+      // Selecionamos o botão e o parágrafo
+    const botao = document.getElementById('newQuoteButton');
+    const texto = document.getElementById('quote');
 
-
+    // Criamos a função que troca o texto
+    botao.onclick = function() {
+      // Sorteia um índice do array
+      const sorteio = Math.floor(Math.random() * quotes.length);
+      
+      // Exibe a citação no parágrafo
+      texto.innerText = quotes[sorteio];
+    };
+    
   </script>
 </body>
 </html>
